@@ -23,7 +23,7 @@ export function Sidebar() {
           </div>
         )}
         {/* Toggle Button */}
-        <button onClick={() => setIsOpen(!isOpen)} className="p-2 focus:outline-none">
+        <button onClick={() => setIsOpen(isOpen)} className="p-2 focus:outline-none">
           <MenuIcon />
         </button>
       </div>
@@ -32,6 +32,8 @@ export function Sidebar() {
       <div className={`pt-8 ${isOpen ? "pl-4" : "pl-2"} transition-all`}>
         <SidebarItem text="Twitter" icon={<TwitterIcon />} />
         <SidebarItem text="YouTube" icon={<YoutubeIcon />} />
+   
+
       </div>
     </div>
   );

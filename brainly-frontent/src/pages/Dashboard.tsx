@@ -45,6 +45,12 @@ export function Dashboard() {
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-semibold text-gray-800">Dashboard</h1>
           <div className="flex gap-4">
+          <Button
+  onClick={() => navigate("/chat")}
+  variant="secondary"
+  text="Chat Room"
+/>
+
             <Button
               onClick={() => setModalOpen(true)}
               variant="primary"

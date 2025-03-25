@@ -1,7 +1,7 @@
 import { ShareIcon } from "../icons/ShareIcon";
 import { YoutubeIcon } from "../icons/YoutubeIcon";
 import { TwitterIcon } from "../icons/TwitterIcon";
-
+import { TrashIcon } from "../icons/TrashIcon";
 interface CardProps {
   title: string;
   link: string;
@@ -26,6 +26,10 @@ export function Card({ title, link, type }: CardProps) {
 
         {/* Action Buttons */}
         <div className="flex space-x-2 text-gray-500">
+           {/* Delete Button */}
+  <button className="cursor-pointer hover:text-red-600 transition">
+    <TrashIcon />
+  </button>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <ShareIcon className="cursor-pointer hover:text-gray-700 transition" />
           </a>
